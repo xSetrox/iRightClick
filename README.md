@@ -11,3 +11,7 @@ No warez is included in this release and this release utilizes the official Open
 ## Usage:
 `main.py collection_id` (collection is also known as "slug").
 Example: `main.py boredapeyachtclub`
+
+### Rate limits
+This release uses the official OpenSea API. While it uses a throttler library to prevent it, you may still get temporarily rate limited or blocked from OpenSea API. I am not responsible for this or other disciplinary measures that OpenSea (probably wont) may take against you.
+That being said, you can edit the throttler declaration at the top of the module to slow down or speed up the downloader if things are too slow or if you are getting 429'd.
