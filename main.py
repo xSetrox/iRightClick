@@ -4,6 +4,8 @@ import aiofiles
 import os
 from asyncio_throttle import Throttler
 import argparse
+from mimetypes import guess_extension, guess_type
+
 # 5 requests/second by default
 # raise if you get 429'd
 throttler = Throttler(rate_limit=5, period=1)
@@ -34,7 +36,8 @@ async def asset_worker(url: str, session: ClientSession, slug) -> str:
             # so speed difference will not matter
             async with session.get(i_url) as resp:
                 content = await resp.read()
-                path = f"{dir}/{a['id']}.png"
+                ext = guess_extension(guess_type(i_url)[0])
+                path = f"{dir}/{a['id']}{ext}"
                 if os.path.isfile(path):
                     print(f"File {path} already exists.")
                 else:
