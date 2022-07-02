@@ -1,6 +1,10 @@
+# Please note: This project is currently broken.  
+I believe they changed things around with their API. If I have time in the future I will fix it. Otherwise feel free to fork and try and fix it yourself.  
+  
 ![iRightClick](https://i.imgur.com/M9nyzWv.png)
 # iRightClick
 Quickly, simply, and asynchronously download NFT's from an Opensea collection.
+
 
 ### NOTICE
 This tool is not developed to encourage or facilitate any piracy. It exists to express a point; that NFT's are nothing more than receipts on the blockchain, and that all assets are simply hosted on Google and can easily be downloaded by anyone. It also exists to allow NFT enthusiasts and owners to easily access their own NFT's as well as other NFT's in the collection.
